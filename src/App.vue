@@ -1,7 +1,7 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
-import AppFooter from './components/AppFooter.vue';
+import AppFooter from './components/Appfooter.vue';
 
 export default {
     data() {
@@ -21,14 +21,13 @@ export default {
 </script>
 
 <template>
-    <h1>
-        Mia App
-    </h1>
+   
 
     <AppHeader />
 
     <AppMain />
 
+    
     <AppFooter />
 </template>
 
