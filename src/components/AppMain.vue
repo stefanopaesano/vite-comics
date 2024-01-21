@@ -1,6 +1,5 @@
 <script>
-import Singleproduct from './singleproduct.vue';
-
+import singleproduct from './singleproduct.vue';
 export default {
     data() {
         return {
@@ -80,10 +79,10 @@ export default {
             ]
         };
     },
-    methods: {},
-    components: {
-         Singleproduct 
+    components:{
+        singleproduct
     }
+    
 }
 </script>
 
@@ -101,9 +100,12 @@ export default {
                     </div>
 
                     <div class="container-prodotti">
-                        <Singleproduct  v-for="(image,i) in images" :key="i"/>
+                       <singleproduct v-for="(image,i) in images" :key="i" />
+                        <!-- v-for="(image,i) in images"/>
+                        :key="i"
+                        :product="image" -->
 
-                        <!-- <div class="unico-prodotto" v-for="(image,i) in images" :key="i">
+                        <!-- <div class="unico-prodotto" >
 
                             <div class="tutte-img">
                                 <img :src="image.thumb" :alt="image.price">
@@ -279,28 +281,28 @@ export default {
     min-height: 150px;
     background-color: black;
     color: white;
-        // .container-prodotti{
-        //     display: flex;
-        //     flex-wrap: wrap;
-//                     .unico-prodotto{
-//                         width: 25%;
-//                         padding: 40px;
-//                         border: 1px solid white;
-//                         text-align: center;
+        .container-prodotti{
+            display: flex;
+            flex-wrap: wrap;
+                    // .unico-prodotto{
+                    //     width: 25%;
+                    //     padding: 40px;
+                    //     border: 1px solid white;
+                    //     text-align: center;
 
-//                         .tutte-img{
-//                             width: 100%;
-//                                 img {
-//                                     width: 100%;
-//                                     max-width: 100%;
-//                                     height: auto; 
-//                                 }
+                    //     .tutte-img{
+                    //         width: 100%;
+                    //             img {
+                    //                 width: 100%;
+                    //                 max-width: 100%;
+                    //                 height: auto; 
+                    //             }
 
-//                         }
+                    //     }
 
-//                     }
+                    // }
 
-//         }
+        }
 
 }
 
