@@ -3,9 +3,18 @@ export default {
     data(){
 
         return{
+            // product:{
+            //         "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
+            //         "price": "$19.99",
+            //         "series": "Action Comics",
+            //         "type": "comic book",
+            // }
 
         };
 
+    },
+    props:{
+        product:Object
     }
 
 
@@ -23,10 +32,21 @@ export default {
 <div class="unico-prodotto">
 
 <div class="tutte-img">
-    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="Action Comics">
+    <img :src="product.thumb" :alt="product.series">
 </div>
 
-prezzo
+<h1>
+    {{ product.series }}
+</h1>
+
+<h2>
+    {{ product.type }}
+</h2>
+
+<h3>
+    {{ product.price}}
+</h3>
+
 
 </div>
 

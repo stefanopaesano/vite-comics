@@ -100,20 +100,13 @@ export default {
                     </div>
 
                     <div class="container-prodotti">
-                       <singleproduct v-for="(image,i) in images" :key="i" />
-                        <!-- v-for="(image,i) in images"/>
+
+                       <singleproduct
+                        v-for="(image,i) in images"
                         :key="i"
-                        :product="image" -->
+                        :product="image"/>
 
-                        <!-- <div class="unico-prodotto" >
-
-                            <div class="tutte-img">
-                                <img :src="image.thumb" :alt="image.price">
-                            </div>
-                            
-                            {{ image.series }}
-
-                        </div> -->
+                        
 
                     </div>
 
@@ -276,7 +269,7 @@ export default {
 
 <style lang="scss" scoped>
 .bar-due{
-    border: 1px solid black;
+    
     width: 100%;
     min-height: 150px;
     background-color: black;
@@ -310,7 +303,7 @@ export default {
 
 
 .bar-tre{
-    border: 1px solid black;
+    
     width: 100%;
     height: 150px;
     display: flex;
@@ -347,14 +340,14 @@ export default {
 
 .bar-quattro{
     background-image: url('footer-bg.jpg');
-    border: 1px solid black;
+    
     width: 100%;
     height: 350px;
     display: flex;
     align-items: center;
     overflow: hidden;
     .contenitore-lista-uno{
-        border: 1px solid black;
+        
         margin-left: 100px;
            li{
             list-style: none;
@@ -369,7 +362,7 @@ export default {
     
     } 
     .contenitore-lista-due{
-        border: 1px solid black;
+        
         height: 194.67px;
        
            li{
@@ -382,7 +375,7 @@ export default {
           
     }
     .contenitore-lista-tre{
-        border: 1px solid black;
+        
         height: 194.67px;
         
            li{
