@@ -33,7 +33,6 @@ export default {
 
 <style lang="scss" scoped>
 .nav-bar{
-    
     width: 100%;
     height: 150px;
     display: flex;

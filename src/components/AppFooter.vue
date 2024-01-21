@@ -25,7 +25,11 @@ export default {
             
 
             <ul>
-                <li></li>
+                <li><img src="C:\Users\stefa\classe 114 boolean\vite-template\footer-facebook.png" alt=""></li>
+                <li><img src="C:\Users\stefa\classe 114 boolean\vite-template\footer-periscope.png" alt=""></li>
+                <li><img src="C:\Users\stefa\classe 114 boolean\vite-template\footer-pinterest.png" alt=""></li>
+                <li><img src="C:\Users\stefa\classe 114 boolean\vite-template\footer-twitter.png" alt=""></li>
+                <li><img src="C:\Users\stefa\classe 114 boolean\vite-template\footer-youtube.png" alt=""></li>
             </ul>
 
         </div>
@@ -40,14 +44,27 @@ export default {
     display: flex;
     background-color: rgb(60, 60, 60);
 
+        ul{
+         display: flex;
+         justify-content: flex-end;
+         
+
+            li{
+                margin-left: 100px;
+                margin-top: 25px;
+                list-style: none;
+            }
+        }
+
       .my-buuton-footer{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        
               button{
                 width: 200px;
                 height: 50px;
                 margin-left: 100px;
+                margin-top: 25px;
+                background-color: rgb(30, 29, 29);
+                color: rgb(12, 124, 236);
               }
       }
    

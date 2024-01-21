@@ -152,7 +152,7 @@ export default {
 
                     <div class="contenitore-lista-uno">
                         <ul>
-                            <h2>dc comics</h2>
+                            <h2>DC Comics</h2>
 
                             <li>
                                 tv
@@ -230,7 +230,7 @@ export default {
 
                     <div class="contenitore-lista-tre">
                         <ul>
-                            <h2>DC</h2>
+                            <h2>Sites</h2>
 
                             <li>
                                 tv
@@ -364,6 +364,7 @@ export default {
     .contenitore-lista-due{
         
         height: 194.67px;
+        margin-left: 20px;
        
            li{
             list-style: none;
